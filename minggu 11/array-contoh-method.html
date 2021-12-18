@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTOH METHOD</title>
+</head>
+<body>
+    
+    <script>
+        // method filter
+        const angka = [1,2,3,4,5,6,7,8,9];
+        
+        // ambil data yang habis di bagi dua
+        const filteredArray = angka.filter(item => item %2 === 0);
+
+        console.log(filteredArray) // ->[2,4,6,8]
+
+        // method includes
+        var tanaman = ["padi", "kacang", "jagung", "kedelai"];
+
+        // apakah kacang sudah ada didalam array tanaman
+        var adakacang = tanaman.includes("kacang");
+
+        console.log(adakacang); // true
+
+        // apakah bayam ada?
+        var adabayam = tanaman.includes("bayam");
+
+        console.log(adabayam); // false
+
+        // method short
+        var alfabet = ['a','f','z','e','r','g'];
+            angka = [3,1,2,6,8,5];
+        
+        console.log(alfabet.sort()); // ['a','e','f','g','r','z']
+        console.log(angka.sort());  // [1,2,3,4,5,6,7,8,9]
+
+
+    </script>
+</body>
+</html>
